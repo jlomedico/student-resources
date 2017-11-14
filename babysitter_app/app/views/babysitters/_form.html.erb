@@ -1,0 +1,43 @@
+<%= form_for(@babysitter) do |f| %>
+  <% if @babysitter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@babysitter.errors.count, "error") %> prohibited this babysitter from being saved:</h2>
+
+      <ul>
+      <% @babysitter.errors.each do |field, message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :rate %><br>
+    <%= f.number_field :rate %>
+  </div>
+
+  <p>You need to enter your SAT score!</p>
+  <div class="field">
+    <%= f.label :sat_score %><br>
+    <%= f.number_field :sat_score %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

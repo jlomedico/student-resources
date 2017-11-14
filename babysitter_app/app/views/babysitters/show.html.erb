@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @babysitter.first_name %>
+  <%= @babysitter.last_name %>
+</p>
+
+<p>
+  <strong>Average Rating:</strong>
+  <%= @babysitter.avg_rating %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @babysitter.city %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @babysitter.phone_number %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @babysitter.rate %>
+</p>
+
+<p>
+  <strong>Sat score:</strong>
+  <%= @babysitter.sat_score %>
+</p>
+
+
+  <strong>Reviews:</strong>
+<% @babysitter.reviews.each do |review| %>
+  <p>
+    <%= review.body %>
+  </p>
+<% end %>
+
+
+
+<%= link_to 'leave a review', new_babysitter_review_path(@babysitter) %>
+<%= link_to 'Edit', edit_babysitter_path(@babysitter) %> |
+<%= link_to 'Back', babysitters_path %>
+
+
+<h5>Other BabySATers in Miami:</h5>
+
+<% @babysitters.where(city: @babysitter.city).map do |babysitter| %>
+  <%= babysitter.first_name %>
+  <%= babysitter.sat_score %>
+  $<%= babysitter.rate %>/hr
+<% end %>
+

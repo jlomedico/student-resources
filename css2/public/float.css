@@ -1,0 +1,6 @@
+img {
+  float: right;
+
+  /* don't allow floats to stack */
+  /*clear: right;*/
+}

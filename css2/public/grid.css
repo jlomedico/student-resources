@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  width: 100px;
+  border: 2px solid black;
+}
+
+img {
+  width: 100%;
+}
+h4 {
+  text-align: center;
+}
+
+/* nth-child starts counting at 1 */
+
+/* 2x2 grid, clear left on 1st, 3rd, 5th */
+li:nth-child(odd) {
+  /*clear: left;*/
+}
+
+/* 3x2 grid, clear left on 4th, 8th */
+/*li:nth-child(3n + 1) {
+  clear: left;
+}*/
+
+
+/* alternative clearfix */
+/*.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+/* don't allow floats to misbehave and
+invade their neighbors */
+.clearfix {
+  overflow: auto;
+  zoom: 1; /* IE6 fix */
+}
+
+.p1 {
+  background: yellow;
+}
+
+.p1 img {
+  float: left;
+}
+
+.p2 {
+  background: orange;
+}

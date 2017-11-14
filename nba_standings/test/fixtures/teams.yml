@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  nickname: MyString
+  conference: Eastern
+  wins: 1
+  losses: 1
+
+two:
+  city: MyString
+  nickname: MyString
+  conference: Western
+  wins: 1
+  losses: 1

@@ -1,0 +1,4 @@
+# Don't need to track logs
+/log
+
+/tmp

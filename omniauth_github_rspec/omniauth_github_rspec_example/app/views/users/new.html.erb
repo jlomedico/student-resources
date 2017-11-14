@@ -1,0 +1,10 @@
+<em><%= notice %></em><br>
+<% if current_user %>
+  <%# user is logged in %>
+  Welcome <%= current_user.name %>!<br>
+  <%= link_to 'Sign Out', logout_path %>
+<% else %>
+  <%# user is logged out %>
+  You are not logged in.<br>
+  <%= link_to "Sign in with Github", github_login_path %>
+<% end %>

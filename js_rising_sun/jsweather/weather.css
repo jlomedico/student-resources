@@ -1,0 +1,27 @@
+body {
+  background-image: url("http://previews.123rf.com/images/benchart/benchart1111/benchart111100426/11248988-Illustration-of-a-summer-sunny-beach-poster-background-horizon-over-water-and-sailboats-Stock-Vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#sun {
+  background: yellow;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 30px;
+
+}
+
+
+.horizon {
+  border: 1px solid black;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*api.openweathermap.org/data/2.5/weather?q=London,uk*/

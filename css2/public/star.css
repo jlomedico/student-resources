@@ -1,0 +1,34 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5rem;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 7rem;
+}
+h1, section, p {
+  margin-bottom: 1.5rem;
+}
+section {
+  position: relative; /* anchor element */
+  background-color: pink;
+  border: 4px solid teal;
+  width: 45%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+#star {
+  position: absolute; /* positioned relative to anchor */
+  top: -5px;
+  right: -20px;
+  font-size: 40px;
+}

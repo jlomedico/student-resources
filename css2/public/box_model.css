@@ -1,0 +1,41 @@
+/* a good general purpose reset */
+* {
+  /*box-sizing: border-box;*/
+}
+
+.container {
+  width: 500px;
+  border: 5px solid blue;
+}
+
+.main {
+  width: 50%; /* 50% of what exactly? */
+  border: 5px solid red;
+  padding: 1em;
+}
+
+.square {
+  width: 20em;
+  /*border: 10px inset #000000;*/
+  /*border: inset blue 4px;*/
+  /*border: solid;*/
+
+  border-style: dashed;
+  border-color: green;
+  border-width: 2px;
+
+  border-top-width: 10px;
+}
+
+.square2 {
+  width: 20em;
+  border: solid;
+  margin: 2em;
+}
+
+.square3 {
+  width: 20em;
+  border: solid;
+  padding: 2em;
+  margin-top: 2em; /* margin collapse swallows this */
+}

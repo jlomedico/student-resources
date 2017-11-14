@@ -1,0 +1,103 @@
+/** RESETS **/
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** HEADER **/
+
+header {
+  background: #5ebacf;
+  box-shadow: 1px 3px #cccccc;
+}
+
+header a, header a:visited {
+  color: white;
+}
+
+header a:hover {
+  color: lightgrey;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header li {
+  padding: 0.5em 0 0.5em 1em;
+}
+
+/** TITLE **/
+h1 {
+  text-align: center;
+}
+
+/** ARTICLE **/
+
+article {
+  padding: 0 0.75em;
+}
+
+/** EVENTS **/
+
+.event {
+  padding: 0.75em;
+}
+
+.event img {
+  width: 100%;
+}
+
+/** FOOTER **/
+
+footer {
+  background: #5ebacf;
+}
+
+footer li {
+  color: white;
+  padding: 0.5em 0 0.5em 1em;
+}
+
+footer a, footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: lightgrey;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* header */
+  header ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /** EVENTS **/
+  #events {
+    display: flex;
+  }
+
+  /* footer */
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}

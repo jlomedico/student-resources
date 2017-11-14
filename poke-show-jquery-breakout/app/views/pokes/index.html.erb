@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>The Pokeshow is LIT<i class="fa fa-fire" aria-hidden="true"></i></h2>
+
+  <div class="slideShow">
+    <% @pokes.each do |poke | %>
+      <div class="card">
+        <h3 class="name"><%= poke.name %> </h3>
+
+        <div class="image">
+          <img src= <%=poke.img_url %> alt="poke image"/>
+        </div>
+
+          <h4><%= poke.lyric %></h4>
+      </div>
+    <% end %>
+  </div>
+</div>

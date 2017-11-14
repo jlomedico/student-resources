@@ -1,0 +1,19 @@
+#big, #medium, #small {
+  /* 5 capital-letter Ms in the element's font-size */
+  padding-left: 5em;
+
+  /* 5 capital-letter M's in the body's font-size */
+  /*padding-left: 5rem; */
+}
+
+#big {
+  font-size: 2em;
+}
+
+#medium {
+  font-size: 1em;
+}
+
+#small {
+  font-size: 0.5em;
+}

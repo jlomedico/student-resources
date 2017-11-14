@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @department.name %>
+</p>
+
+<p>
+  <strong>Organization:</strong>
+  <%= @department.organization.name %>
+</p>
+
+<h2>Positions</h2>
+<p>
+  <ul>
+  <% @department.positions.each do |pos| %>
+    <li><%= link_to pos.name, pos %>
+  <% end %>
+  </ul>
+</p>
+
+<p>
+  <%= link_to 'New Position', 
+    new_department_position_path(@department) %>
+</p>
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', @department.organization %>

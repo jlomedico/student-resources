@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Babysitters</h1>
+
+<h4>Find a babysitter who will prepare your toddler for their future SAT exams!</h4>
+
+
+
+<h4>Our BabySATters:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Full name</th>
+      <th>City</th>
+      <th>Phone number</th>
+      <th>Rate</th>
+      <th>Sat score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @babysitters.each do |babysitter| %>
+      <tr>
+        <td>
+          <%= link_to babysitter do %>
+            <%= babysitter.first_name %>
+            <%= babysitter.last_name %>
+          <% end %>
+        </td>
+        <td><%= babysitter.city %></td>
+        <td><%= babysitter.phone_number %></td>
+        <td>$<%= babysitter.rate %>/hr</td>
+        <td><%= babysitter.sat_score %></td>
+        <td><%= link_to 'Show', babysitter %></td>
+        <td><%= link_to 'Edit', edit_babysitter_path(babysitter) %></td>
+        <td><%= link_to 'Destroy', babysitter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Babysitter', new_babysitter_path %>

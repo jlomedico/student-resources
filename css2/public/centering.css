@@ -1,0 +1,21 @@
+img {
+   /* usually not a good idea to hard-code image widths */
+  width: 30em;
+}
+
+section {
+  width: 80%;
+  background-color: yellow;
+}
+
+/* centering a block element */
+.content {
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 0 auto;
+}
+
+/* centering the contents of an element */
+.image {
+  text-align: center;
+}

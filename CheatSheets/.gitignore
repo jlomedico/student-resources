@@ -1,0 +1,22 @@
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore public uploads
+/public
+
+# Ignore simplecov
+coverage
+
+# Ignore backups
+pg-production*
+pg-staging*
+
+# Ignore generated ERD files
+erd.pdf
+
+# Ignore RVM Gemset Configuration
+.ruby-*
+
+# Ignore environment variables
+.env

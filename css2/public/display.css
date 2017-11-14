@@ -1,0 +1,47 @@
+div {
+  background: yellow;
+  margin: 2em;
+  padding: 2em;
+}
+
+span {
+  background: orange;
+  margin: 1em;
+  padding: 1em;
+}
+
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
+
+li {
+  font-size: 1rem;
+  background: grey;
+  color: white;
+  text-align: center;
+  width: 10em;
+}
+
+.inline-list li {
+  display: inline;
+}
+
+.float-list li {
+  float: left;
+}
+
+.inline-block-list li {
+  display: inline-block;
+}
+
+ul.inline-block-fix { font-size: 0;}
+ul.inline-block-fix li { font-size: 1rem;}
+
+.invisible {
+  /*visibility: hidden;*/
+  /*opacity: 0.5;*/
+  display: none;
+}

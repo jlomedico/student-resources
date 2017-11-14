@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Attachment Checker</title>
+    <link rel="stylesheet" href="/style.css" media="screen" title="no title">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <div id="error">
+
+    </div>
+    <form class="" action="index.html" method="post">
+      <div class="buttons">
+        <button class="send" type="button">Send</button>
+        <button class="save" type="button">Save</button>
+        <button class="discard" type="button">Discard</button>
+      </div>
+
+      <div class="to">
+        <label for="to">To:</label>
+        <span><input type="text" id="to" name="to" value=""></span>
+      </div>
+
+      <div class="subject">
+        <label for="subject">Subject:</label>
+        <span><input type="text" name="subject" id="subject" value=""></span>
+      </div>
+
+      <div class="attachment">
+        <label for="attachment">Attachment:</label>
+        <span><input type="file" name="attachment" id="attachment"></span>
+      </div>
+
+      <div class="body">
+        <textarea id="body"></textarea>
+      </div>
+
+      <div class="buttons">
+        <button class="send" type="button">Send</button>
+        <button class="save" type="button">Save</button>
+        <button class="discard" type="button">Discard</button>
+      </div>
+    </form>
+  </body>
+</html>

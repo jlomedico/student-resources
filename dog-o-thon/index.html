@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dog Adder</title>
+</head>
+<body>
+
+<fieldset>
+  <legend>Add a new dog:</legend>
+  <form id="the_form">
+    <div>
+      <label>Dogs Name</label>
+      <input type="text" name="dog_name" id="[WHAT GOES HERE]"/>
+    </div>
+
+    <div>
+      <label>Dogs Breed</label>
+      <select id="breed">
+        <option>Sharpie</option>
+        <option>Dobbieman</option>
+        <option>Shitsyou</option>
+        <option>Border Caller</option>
+      </select>
+    </div>
+
+    <input type="submit" value="Add this dog to the table!" />
+  </form>
+</fieldset>
+
+<br/>
+
+<div class="number">
+	There are <strong id="num_dogs">0</strong> dogs!
+</div>
+
+<br/>
+
+<table>
+<thead>
+	<tr>
+		<th>
+		Name
+		</th>
+		<th>
+		Breed
+		</th>
+	</tr>
+</thead>
+<tbody id="table_body">
+	<tr>
+		<td colspan="2" class="empty">No dogs yet!</td>
+	</tr>
+</tbody>
+</table>
+
+</body>
+</html>

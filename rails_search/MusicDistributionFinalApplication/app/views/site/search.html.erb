@@ -1,0 +1,7 @@
+<% if @results.count > 0 %>
+  <ul>
+    <%= render partial: 'search_result', collection: @results %>
+  </ul>
+<% else %>
+  <p>We could not find any matching results.</p>
+<% end %>

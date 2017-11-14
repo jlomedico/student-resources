@@ -1,0 +1,26 @@
+#fixed {
+  background: blue;
+  width: 10em;
+  position: fixed;
+}
+
+.rel-positioned {
+  background: yellow;
+  /*position: absolute;*/
+  position: relative;
+  top: -3em;
+  left: 3em;
+}
+
+.abs-positioned {
+  background: lightblue;
+  position: absolute;
+  bottom: 1em;
+  left: 3em;
+}
+
+#container {
+  /* activating this line changes the "anchor"
+  of the absolutely positioned child elements */
+  /*position: relative;*/
+}

@@ -1,0 +1,39 @@
+Remember when scaffolding the Todo app we ran a command `rake db:migrate`? What was that?
+
+In 1976, computer programmer Stuart Feldman created Make, a program for running and managing simple tasks. As you’re building a large application, you may sometimes find it necessary to accomplish some small one-off tasks. For example, you may need to setup a database. Perhaps you need to install a gem. Maybe you can’t build the database until you install the gem, so those tasks depend on each other. Make handles those tasks. 
+
+Make tasks are things you don’t need to do every day. They don’t need run every time you start the server. But they’re nice to have for those special moments.
+
+Rake is a Ruby implementation of Make written by Jim Weirich in 2004. Jim passed away in February of this year and his final GitHub commit was turned into a public memorial. The rake gem he created was so useful that it has been packaged with Ruby since v1.9. You get rake for free when you install Ruby.
+
+When you use rake from the command line, it reads a file in the same directory named Rakefile. This file defines all the different tasks you can run with rake.
+
+```ruby
+# In Rakefile
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+
+require File.expand_path('../config/application', __FILE__)
+
+Rails.application.load_tasks
+```
+
+The default Rails Rakefile is sparse. Most of the tasks are loaded by a method inside Rails. There are useful instructions in this file for how to define your own Rake tasks, if you’re ever so inclined.
+
+If you’d like to see a list of all the available rake tasks (along with descriptions), use rake -T.
+
+```sh
+# In Terminal
+$ rake -T
+
+# Outputs:
+rake about                              # List versions of all Rails frameworks and the environment
+… stuff ...
+rake db:create                          # Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:al...
+rake db:drop                            # Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to...
+rake db:fixtures:load                   # Load fixtures into the current environment's database
+rake db:migrate                         # Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)
+rake db:migrate:status                  # Display status of migrations
+rake db:rollback                        # Rolls the schema back to the previous version (specify steps w/ STEP=n)
+# ... more stuff ...
+```

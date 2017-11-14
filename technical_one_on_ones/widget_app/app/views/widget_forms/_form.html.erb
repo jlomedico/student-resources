@@ -1,0 +1,17 @@
+<%= form_for(@widget_form) do |f| %>
+  <% if @widget_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@widget_form.errors.count, "error") %> prohibited this widget_form from being saved:</h2>
+
+      <ul>
+      <% @widget_form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

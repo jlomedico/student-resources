@@ -1,0 +1,63 @@
+ul {
+  margin: 0;
+}
+
+nav {
+  background-color: lightblue;
+
+  /* This should only activate when the window is wide (media queries) */
+  /*float: left;*/
+  /*position: fixed;*/
+}
+
+nav li {
+  list-style-type: none;
+  padding: 0.5em;
+}
+
+section {
+  background: yellow;
+  padding: 0.5em 1em;
+  
+  /* This should only activate when the window is wide (media queries) */
+  /*margin-left: 10em;*/
+
+  /* responsive paragraphs */
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/* initial settings for text */
+.only-wide {
+  opacity: 0.5;
+  color: grey;
+}
+.only-small {
+  color: red;
+}
+
+.only-wide, .only-small {
+  /* animate property changes to the text */
+  transition: opacity 1s, color 1s;
+}
+
+@media (min-width: 700px) {
+  nav {
+    float: left;
+    width: 10em; /* should match margin-left */
+    position: fixed;
+  }
+  section {
+    margin-left: 10em; /* should match nav width */
+  }
+
+  /* wide-screen changes for text */
+  .only-wide {
+    opacity: 1;
+    color: red;
+  }
+  .only-small {
+    opacity: 0.5;
+    color: grey;
+  }
+}

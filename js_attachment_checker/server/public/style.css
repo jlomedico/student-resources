@@ -1,0 +1,64 @@
+/* resets */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* buttons */
+
+.buttons {
+  background-color: teal;
+}
+
+.buttons button {
+  margin: 0.5em;
+}
+
+/* form */
+
+form {
+  background-color: lightblue;
+}
+
+form span {
+  display: block;
+  overflow: hidden;
+}
+
+form div, form textarea {
+  padding-right: 0.5em;
+}
+
+form input {
+  margin: 0.5em 0.5em 0.5em 0;
+  width: 100%;
+}
+
+label {
+  margin: 0.5em 0.5em 0 0.5em;
+  width: 5em;
+  float: left;
+  text-align: right;
+}
+
+/* form > body */
+
+form .body {
+  padding-left: 0.5em;
+}
+
+textarea {
+  width: 100%;
+}
+
+/* error */
+
+#error {
+  display: none;
+  background-color: pink;
+  color: red;
+}
